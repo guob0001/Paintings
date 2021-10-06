@@ -17,7 +17,7 @@ public class Painting {
     @ApiModelProperty(notes = "artist name")
     private String artist;
     @Column
-    @ApiModelProperty(notes = "price of tthis painting")
+    @ApiModelProperty(notes = "price of this painting")
     private double price;
     @Column
     private String title;

@@ -3,6 +3,7 @@ package edu.kea.paintings.models;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import net.minidev.json.annotate.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -26,6 +27,7 @@ public class Gallery {
     @Column
     private int squareFeet;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "gallery", fetch =FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Artist> artists;
 }

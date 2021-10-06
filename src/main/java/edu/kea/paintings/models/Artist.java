@@ -1,6 +1,7 @@
 package edu.kea.paintings.models;
 
 import lombok.Data;
+import net.minidev.json.annotate.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -27,7 +28,8 @@ public class Artist {
     @Column
     private Gender gender;
 
-    @ManyToOne
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name= "gallery_id")
     private Gallery gallery;
 
