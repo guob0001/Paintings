@@ -1,0 +1,8 @@
+HTTP Method             Endpoint
+GET                     /dinosaurs          = GET ALL dinosaurs
+GET                     /dinosaurs/{id}     = GET specific dinosaur by the corresponding ID
+POST                    /dinosaurs          = Create a dinosaur
+PUT                     /dinosaurs/{id}     = update a dinosaur by id
+PATCH                   /dinosaurs/{id}     = updates some values by id
+DELETE                  /dinosaurs/{id}     = deletes a dinosaur by id
+
